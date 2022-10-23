@@ -1,12 +1,12 @@
 const fs = require("fs");
 
-// Read users.json file
+// Read Tasks.json file
 fs.readFile("tasks.json", function (err, data) {
   // Check for errors
   if (err) throw err;
 
   // Converting to JSON
-  const users = JSON.parse(data);
+  const Tasks = JSON.parse(data);
 
-  console.log(users); // Print users
+  console.log(Tasks); // Print Tasks
 });
