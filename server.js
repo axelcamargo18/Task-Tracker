@@ -13,30 +13,32 @@ const app = express();
 app.use(express.static(__dirname + "/"));
 
 app.get("/", (req, res) => {
+  //   fs.readFile("./index.html", (err, data) => {
+  //     // AddEvents();
+  //     // DisplayTodos();
+  //     res.write(data);
+  //     res.end();
+  //   });
+  res.sendFile(path.join(__dirname, "/index.html"));
+});
+
+app.get("/add", (req, res) => {
+  // fs.readFile("./index.html", (err, data) => {
+  //     // AddEvents();
+  //     // DisplayTodos();
+  //     res.write(data);
+  //     res.end();
+  // });
+  res.sendFile(path.join(__dirname, "/index.html"));
+});
+
+app.get("/", (req, res) => {
   fs.readFile("./index.html", (err, data) => {
     // AddEvents();
     // DisplayTodos();
     res.write(data);
     res.end();
   });
-});
-
-app.get("/add", (req, res) => {
-    fs.readFile("./index.html", (err, data) => {
-        // AddEvents();
-        // DisplayTodos();
-        res.write(data);
-        res.end();
-    });
-});
-
-app.get("/", (req, res) => {
-fs.readFile("./index.html", (err, data) => {
-    // AddEvents();
-    // DisplayTodos();
-    res.write(data);
-    res.end();
-});
 });
 
 app.listen(4000, (err) => {

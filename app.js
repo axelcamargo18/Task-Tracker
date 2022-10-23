@@ -1,10 +1,3 @@
-// import fs from "./node_modules/fs";
-
-// console.log(fs);
-// fetch("http://127.0.0.1:5500/tasks.json")
-//   .then((res) => res.json())
-//   .then((data) => console.log(data));
-
 window.addEventListener("load", () => {
   todos = JSON.parse(localStorage.getItem("todos")) || [];
   const nameInput = document.querySelector("#name");
@@ -45,7 +38,7 @@ window.addEventListener("load", () => {
   DisplayTodos();
 });
 
-export function DisplayTodos() {
+function DisplayTodos() {
   const todoList = document.querySelector("#todo-list");
   todoList.innerHTML = "";
 
