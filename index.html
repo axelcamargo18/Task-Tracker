@@ -21,12 +21,12 @@
     <main class="app">
       <section class="greeting">
         <h2 class="title">
-          What's up, <input type="text" id="name" placeholder="Name here" />
+          <input type="text" id="name" />
         </h2>
       </section>
 
       <section class="create-todo">
-        <h3>CREATE A TODO</h3>
+        <h3>Add a Task</h3>
         <form id="new-todo-form">
           <input
             type="text"
@@ -36,20 +36,15 @@
           />
 
           <label>
-            <input
-              type="radio"
-              name="category"
-              id="category2"
-              value="personal"
-            />
+            <input type="radio" name="category" id="category2" />
           </label>
 
-          <input type="submit" value="Add todo" />
+          <input type="submit" value="Submit" />
         </form>
       </section>
 
       <section class="todo-list">
-        <h3>TODO LIST</h3>
+        <h4>TASK LIST</h4>
         <div class="list" id="todo-list"></div>
       </section>
     </main>

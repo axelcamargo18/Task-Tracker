@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
     e.preventDefault();
 
     if (e.target.elements.content.value === "") {
-      return alert("Input can't be empty");
+      return alert("Please fill out the required field.");
     }
 
     const todo = {
@@ -57,11 +57,7 @@ function DisplayTodos() {
     input.type = "checkbox";
     input.checked = todo.done;
     span.classList.add("bubble");
-    if (todo.category == "personal") {
-      span.classList.add("personal");
-    } else {
-      span.classList.add("business");
-    }
+
     content.classList.add("todo-content");
     actions.classList.add("actions");
     edit.classList.add("edit");

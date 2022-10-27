@@ -1,6 +1,1 @@
-[
-  { "task": "taskname", "id": "taskid1" },
-  { "task": "new task", "id": "2" },
-  { "task": "new task", "id": "3" },
-  { "task": "new task", "id": "5" }
-]
+[{"task":"taskname","id":"taskid1"},{"task":"new task","id":"2"},{"task":"new task","id":"3"},{"task":"new task","id":"5"},{"task":"new task","id":"6"}]

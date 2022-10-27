@@ -6,7 +6,7 @@ const users = require("./tasks.json");
 // Defining new user
 let user = {
   task: "new task",
-  id: "5",
+  id: "6",
 };
 
 // STEP 2: Adding new data to users object
