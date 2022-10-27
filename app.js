@@ -3,13 +3,13 @@ window.addEventListener("load", () => {
   const nameInput = document.querySelector("#name");
   const newTodoForm = document.querySelector("#new-todo-form");
 
-  const username = localStorage.getItem("username") || "";
+  // const username = localStorage.getItem("username") || "";
 
-  nameInput.value = username;
+  // nameInput.value = username;
 
-  nameInput.addEventListener("change", (e) => {
-    localStorage.setItem("username", e.target.value);
-  });
+  // nameInput.addEventListener("change", (e) => {
+  //   localStorage.setItem("username", e.target.value);
+  // });
 
   newTodoForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -29,7 +29,6 @@ window.addEventListener("load", () => {
 
     localStorage.setItem("todos", JSON.stringify(todos));
 
-    // Reset the form
     e.target.reset();
 
     DisplayTodos();
